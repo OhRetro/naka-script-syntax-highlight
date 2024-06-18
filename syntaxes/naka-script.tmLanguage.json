@@ -20,19 +20,15 @@
         "keywords": {
             "patterns": [
                 {
-                    "name": "keyword.naka-script",
-                    "match": "\\b(while|for|return|continue|break|->)\\b"
-                },
-                {
                     "name": "keyword.control.naka-script",
-                    "match": "\\b(if|elseif|else|and|or)\\b"
+                    "match": "\\b(while|for|return|continue|break|if|elseif|else|and|or|not|then|end|to|step|delvar|is)\\b"
                 },
                 {
-                    "name": "entity.other.attribute-name.naka-script",
+                    "name": "entity.other.attribute-name",
                     "match": "\\b(var|const|func)\\b"
                 },
                 {
-                    "name": "constant.language.naka-script",
+                    "name": "constant.naka-script",
                     "match": "\\b(true|false|null)\\b"
                 },
                 {
@@ -68,11 +64,11 @@
             "patterns": [
                 {
                     "name": "keyword.operator.naka-script",
-                    "match": "\\+|-|\\*|/|\\*\\*|%|=|,|\\.|;|:"
+                    "match": "\\+|-|\\*|/|\\*\\*|%|=|,|\\.|;|:|->|<-"
                 },
                 {
-                    "name": "keyword.operator.naka-script",
-                    "match": "not|==|!=|<=|>=|<|>"
+                    "name": "keyword.operator.logical.naka-script",
+                    "match": "\\b(==|!=|<=|>=|<|>)\\b"
                 }
             ]
         }

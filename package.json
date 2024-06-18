@@ -3,7 +3,7 @@
 	"displayName": "NakaScript Syntax Highlight",
 	"description": "An Syntax Highlight for my programming language, NakaScript",
 	"publisher": "ohretro-naka",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"icon": "./assets/logo_icon.png",
 	"repository": {
 		"type": "git",
@@ -36,7 +36,7 @@
 		"grammars": [
 			{
 				"language": "naka-script",
-				"scopeName": "source.nkt",
+				"scopeName": "source.ns",
 				"path": "./syntaxes/naka-script.tmLanguage.json"
 			}
 		]
