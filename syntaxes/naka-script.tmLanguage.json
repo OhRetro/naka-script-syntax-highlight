@@ -25,7 +25,7 @@
                 },
                 {
                     "name": "keyword.control.naka-script",
-                    "match": "\\b(if|elseif|else)\\b"
+                    "match": "\\b(if|elseif|else|and|or)\\b"
                 },
                 {
                     "name": "entity.other.attribute-name.naka-script",
@@ -40,7 +40,7 @@
                     "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\s*\\("
                 }
             ]
-        },  
+        },
         "strings": {
             "patterns": [
                 {
@@ -50,32 +50,32 @@
                     "patterns": [
                         {
                             "name": "constant.character.escape.naka-script",
-                            "match": "\\\\\""
-                        },
-                        {
-                            "name": "constant.character.escape.naka-script",
-                            "match": "\\\\(n|t)"
+                            "match": "\\\\[\"nt]"
                         }
                     ]
                 }
             ]
         },
         "numbers": {
-            "name": "constant.numeric.naka-script",
-            "match": "\\b\\d+(\\.\\d+)?\\b"
+            "patterns": [
+                {
+                    "name": "constant.numeric.naka-script",
+                    "match": "\\b\\d+(\\.\\d+)?\\b"
+                }
+            ]
         },
         "operators": {
             "patterns": [
                 {
                     "name": "keyword.operator.naka-script",
-                    "match": "\\+|-|\\*|/|\\*\\*|%|="
+                    "match": "\\+|-|\\*|/|\\*\\*|%|=|,|\\.|;|:"
                 },
                 {
                     "name": "keyword.operator.naka-script",
-                    "match": "not|==|!=|<=|>=|<|>|&&|\\|\\|"
+                    "match": "not|==|!=|<=|>=|<|>"
                 }
             ]
         }
     },
-    "scopeName": "source.nkt"
+    "scopeName": "source.ns"
 }
