@@ -1,0 +1,81 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "NakaScript",
+    "patterns": [
+        { "include": "#comments" },
+        { "include": "#keywords" },
+        { "include": "#strings" },
+        { "include": "#numbers" },
+        { "include": "#operators" }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.number-sign.naka-script",
+                    "match": "#.*$"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.naka-script",
+                    "match": "\\b(while|for|return|continue|break|->)\\b"
+                },
+                {
+                    "name": "keyword.control.naka-script",
+                    "match": "\\b(if|elseif|else)\\b"
+                },
+                {
+                    "name": "entity.other.attribute-name.naka-script",
+                    "match": "\\b(var|const|func)\\b"
+                },
+                {
+                    "name": "constant.language.naka-script",
+                    "match": "\\b(true|false|null)\\b"
+                },
+                {
+                    "name": "entity.name.function.naka-script",
+                    "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\s*\\("
+                }
+            ]
+        },  
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.naka-script",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.naka-script",
+                            "match": "\\\\\""
+                        },
+                        {
+                            "name": "constant.character.escape.naka-script",
+                            "match": "\\\\(n|t)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "numbers": {
+            "name": "constant.numeric.naka-script",
+            "match": "\\b\\d+(\\.\\d+)?\\b"
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.naka-script",
+                    "match": "\\+|-|\\*|/|\\*\\*|%|="
+                },
+                {
+                    "name": "keyword.operator.naka-script",
+                    "match": "not|==|!=|<=|>=|<|>|&&|\\|\\|"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.nkt"
+}

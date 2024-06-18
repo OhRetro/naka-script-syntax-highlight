@@ -1,2 +1,2 @@
-# naka-script-syntax-highlight
-Syntax Highlight for NakaScript
+# NakaScript Syntax Highlight
+Syntax Highlight for [NakaScript](https://github.com/OhRetro/naka-script)

@@ -1,0 +1,44 @@
+{
+	"name": "naka-script-syntax-highlight",
+	"displayName": "NakaScript Syntax Highlight",
+	"description": "An Syntax Highlight for my programming language, NakaScript",
+	"publisher": "ohretro-naka",
+	"version": "0.0.1",
+	"icon": "./assets/logo_icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/OhRetro/naka-script-syntax-highlight.git"
+	},
+	"engines": {
+		"vscode": "^1.86.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "naka-script",
+				"aliases": [
+					"NakaScript",
+					"nakascript"
+				],
+				"extensions": [
+					".ns"
+				],
+				"icon": {
+					"light": "./assets/logo_icon.png",
+					"dark": "./assets/logo_icon.png"
+				},
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "naka-script",
+				"scopeName": "source.nkt",
+				"path": "./syntaxes/naka-script.tmLanguage.json"
+			}
+		]
+	}
+}
