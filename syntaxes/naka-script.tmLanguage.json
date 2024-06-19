@@ -64,11 +64,7 @@
             "patterns": [
                 {
                     "name": "keyword.operator.naka-script",
-                    "match": "\\+|-|\\*|/|\\*\\*|%|=|,|\\.|;|:|->|<-"
-                },
-                {
-                    "name": "keyword.operator.logical.naka-script",
-                    "match": "\\b(==|!=|<=|>=|<|>)\\b"
+                    "match": "\\+|-|\\*|/|\\*\\*|%|=|,|\\.|;|:|->|<-|==|!=|<=|>=|<|>"
                 }
             ]
         }

@@ -1,2 +1,3 @@
 # NakaScript Syntax Highlight
-Syntax Highlight for [NakaScript](https://github.com/OhRetro/naka-script)
+
+A dedicated syntax highlight of my programming language, [NakaScript](https://github.com/OhRetro/naka-script).
