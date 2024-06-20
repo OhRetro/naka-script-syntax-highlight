@@ -28,7 +28,7 @@
                     "match": "\\b(var|const|func)\\b"
                 },
                 {
-                    "name": "constant.naka-script",
+                    "name": "keyword.naka-script",
                     "match": "\\b(true|false|null)\\b"
                 },
                 {
